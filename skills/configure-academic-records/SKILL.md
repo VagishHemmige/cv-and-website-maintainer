@@ -1,6 +1,6 @@
 ---
 name: configure-academic-records
-description: Configure or resume Academic Records preferences for an existing records project, locate or create its private profile, change review frequency or source selections, configure the host's recurring review task, or recover missing preferences. Does not import a CV or create a website.
+description: Configure or resume CV and Website Maintainer (formerly Academic Records) preferences for an existing records project, locate or create its private profile, change review frequency or source selections, configure the host's recurring review task, or recover missing preferences. Does not import a CV or create a website.
 ---
 
 Read [private preferences](../../references/preferences.md), [questions](../../references/questions.md), and [setup inventory](../../references/setup.md). For an existing records project, guide preference setup here when no profile exists. For requested first-time CV/site setup or initial source reconciliation, use [initialize-academic-records](../initialize-academic-records/SKILL.md). A missing profile alone does not authorize a new project or repeated CV import. Reuse confirmed answers, ask one question at a time, save each response as a pending answer under the preferences procedure, and resume unresolved settings on return. Combine confirmed answers into one exact profile proposal at a checkpoint; do not edit config.json after each answer. Verify private storage before claiming persistence.

@@ -1,6 +1,6 @@
 ---
 name: initialize-academic-records
-description: Guide requested first-time Academic Records CV/site setup or initial source reconciliation from a CV, an existing website or local project, or a fresh start. Stage the supported site/Word-CV starter and private CV candidate reconciliation. Use configure-academic-records for existing-project preferences, including a missing profile; do not restart routine maintenance.
+description: Guide requested first-time CV and Website Maintainer (formerly Academic Records) CV/site setup or initial source reconciliation from a CV, an existing website or local project, or a fresh start. Stage the supported site/Word-CV starter and private CV candidate reconciliation. Use configure-academic-records for existing-project preferences, including a missing profile; do not restart routine maintenance.
 ---
 
 Start with the user's goals and current assets, not technical commands. Use [initialization](../../references/initialization.md), reading its relevant branch progressively. Ask one question at a time using the host's supported question UI, with a single chat question as fallback. Reuse saved answers. Missing preferences for an existing records project belong in [configure-academic-records](../configure-academic-records/SKILL.md), without repeating CV import. An inaccessible or corrupt profile requires access/reviewed recovery, not a fresh initializer. Do not treat this skill as permission to alter an existing user's profile or project.

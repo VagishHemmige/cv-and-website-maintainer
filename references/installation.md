@@ -1,8 +1,8 @@
-# Install Academic Records and start your own project
+# Install CV and Website Maintainer and start your own project
 
 ## Before you start
 
-Academic Records is a plugin for an assistant with authorized local file and process access. The supported onboarding target here is a desktop Codex session with a Plugins Directory. Product labels and availability can vary by account/workspace; see the [official plugin quickstart](https://developers.openai.com/plugins/quickstart). A browser-only chat cannot directly execute R or edit folders on your computer.
+CV and Website Maintainer (formerly Academic Records) is a plugin for an assistant with authorized local file and process access. The supported onboarding target here is a desktop Codex session with a Plugins Directory. Product labels and availability can vary by account/workspace; see the [official plugin quickstart](https://developers.openai.com/plugins/quickstart). A browser-only chat cannot directly execute R or edit folders on your computer.
 
 You do not need to know R, YAML or Git to begin the interview. Bring an existing CV (DOCX, text-readable PDF or TXT), or identify your current website/local project. Do not upload patient-identifying material; the assistant must warn and pause when identifiers may be present.
 
@@ -47,7 +47,7 @@ These steps follow [OpenAI's local-marketplace documentation](https://developers
 
 ## Your first session
 
-Say: “Help me start Academic Records from my CV. Check readiness first and ask one question at a time.”
+Say: “Help me start CV and Website Maintainer from my CV. Check readiness first and ask one question at a time.”
 
 The assistant establishes CV/site/both, existing folders/site, editing/execution preferences and private storage. It shows readiness and resolves blockers one at a time. It stages candidate records privately with source evidence, reviews omissions and public/private boundaries, and presents exact proposals. It creates files, renders, commits or publishes only within approved scope and host permissions. Setup can span several sessions; ask to resume rather than create another profile.
 
@@ -57,7 +57,7 @@ A working CV/site is separate from importing facts. A successful Git push is sep
 
 Review tasks are optional and configured separately. Local scheduled work needs the computer on, the desktop app running and its folders accessible: [official scheduling guidance](https://learn.chatgpt.com/docs/automations). Sleep, shutdown, lost connections or expired authorization can prevent work. Automatic replay of every missed trigger is not established; inspect task/run status or ask for a review when returning.
 
-Academic Records resumes discovery from each source's last successful saved cutoff plus overlap when a later authorized search succeeds. This can recover a coverage gap; it is not proof a missed scheduled run executed. Broader reviews remain pending until actually handled. Scheduling is configured through [the existing workflow](scheduling.md); installing a ZIP creates no task.
+The plugin resumes discovery from each source's last successful saved cutoff plus overlap when a later authorized search succeeds. This can recover a coverage gap; it is not proof a missed scheduled run executed. Broader reviews remain pending until actually handled. Scheduling is configured through [the existing workflow](scheduling.md); installing a ZIP creates no task.
 
 ## Updates and troubleshooting
 

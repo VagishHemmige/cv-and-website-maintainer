@@ -1,6 +1,6 @@
 ---
 name: update-zotero-records
-description: Use when adding publications or book chapters to a configured Zotero library, reviewing publication candidates from Academic Records discovery, or proposing corrections to existing Zotero metadata. Requires exact-proposal approval before any library write and an available Zotero integration.
+description: Use when adding publications or book chapters to a configured Zotero library, reviewing publication candidates from CV and Website Maintainer (formerly Academic Records) discovery, or proposing corrections to existing Zotero metadata. Requires exact-proposal approval before any library write and an available Zotero integration.
 ---
 
 Start by following [profile discovery and resumable setup](../../references/preferences.md). For missing or incomplete preferences in an existing records project, use [configure-academic-records](../configure-academic-records/SKILL.md). Use [initialize-academic-records](../initialize-academic-records/SKILL.md) only for requested first-time CV/site setup or initial source reconciliation. A missing profile alone does not authorize a new project, a repeated CV import or a second profile. Reuse confirmed answers. If the intended starting point is unclear, ask one focused question before choosing a workflow. Inaccessible or corrupt existing state requires access/reviewed recovery, not replacement; missing file permissions require the handoff/access workflow, not initialization.
