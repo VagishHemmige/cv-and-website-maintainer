@@ -13,7 +13,7 @@ import test_personal_site as site
 class PublicPathTests(unittest.TestCase):
     def test_private_and_unsafe_paths_block_in_both_workflows(self):
         paths=['AGENTS.md','data/agents.MD','docs/.codex/settings.json',
-               '.codex/cache/file.txt','cv/private.yml','docs/raw/upload.pdf',
+               '.codex/cache/file.txt','.claude/settings.json','docs/.claude/notes.md','cv/private.yml','docs/raw/upload.pdf',
                'docs/state-history/op.json','docs/config.json/nested.txt',
                '.env.local','docs/.environment','docs/secret.KEY',
                'docs/templates/cv-styles.docx','Templates/cv-styles.docx',

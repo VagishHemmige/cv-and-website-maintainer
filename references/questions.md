@@ -1,6 +1,6 @@
 # Question interaction
 
-Use the host's structured question capability when available and permitted for the current question. Tool names vary by host; do not assume a particular Codex tool exists in Claude or another host. In Codex, prefer request_user_input_async when available; request_user_input may be restricted to Plan mode. If no suitable question capability is available, ask a single clear question in chat.
+Use the host's structured question capability when available and permitted for the current question. Tool names vary by host; do not assume a particular Codex tool exists in Claude or another host. In Codex, prefer request_user_input_async when available; request_user_input may be restricted to Plan mode. In Claude, use AskUserQuestion when available. If no suitable question capability is available, ask a single clear question in chat.
 
 Ask exactly one question or decision at a time, with only one unanswered question active. Wait for the user's response before asking the next. Do not bundle unrelated facts into one prompt, a numbered questionnaire, or multiple questions in one tool call. If an earlier batch is pending, supersede it with one selected question; preserve unanswered items privately. Continue independent work while awaiting an asynchronous response.
 

@@ -1,7 +1,7 @@
 """One conservative public-file boundary for new setup and deployment observations."""
 from pathlib import PurePosixPath, PureWindowsPath
 
-PROTECTED_PARTS = frozenset(('cv', 'private', 'raw', '.git', '.codex',
+PROTECTED_PARTS = frozenset(('cv', 'private', 'raw', '.git', '.codex', '.claude',
     'state-history', 'profile-proposals', 'initialization-history', '.ssh'))
 PROTECTED_NAMES = frozenset(('private.yml', 'config.json', 'handoff.json',
     'initialization.json', 'agents.md', '.renviron', '.rhistory', '.rdata',
