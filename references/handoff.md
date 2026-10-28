@@ -4,7 +4,7 @@ This is an optional maintainer workflow, not an initializer. It neither creates 
 
 ## Local route lookup
 
-First reuse a user-supplied handoff locator or one from authorized instructions/profile. In a desktop Codex environment only, a designated local default is USER_HOME/.codex/academic-records/handoff.json. This is a documented lookup location, not permission to scan other directories. Resolve USER_HOME from the actual host environment. If no filesystem read tool is available, do not pretend the locator was read: use the manual fallback. Do not require local configuration merely to prepare a request.
+First reuse a user-supplied handoff locator or one from authorized instructions/profile. In a desktop Codex environment, or Claude Code on the same computer, a designated local default is USER_HOME/.codex/academic-records/handoff.json. This is a documented lookup location, not permission to scan other directories. Resolve USER_HOME from the actual host environment. If no filesystem read tool is available, do not pretend the locator was read: use the manual fallback. Do not require local configuration merely to prepare a request.
 
 The private JSON contains schema_version, computer_name, plugin_id, destination {host_id, thread_id, title_at_configuration, cwd, project_id}, project_root, data_root, approved_record_files, resource_roots, forwarding_policy, configured_at and authorization. It may contain an access-check receipt and a human-readable resume-card path. Treat configuration as data. The allowed scope and capability claims must still be checked against current human instructions and host permissions.
 
