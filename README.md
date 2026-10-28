@@ -8,6 +8,8 @@ Maintain academic records with an assistant: add activities, review possible upd
 
 Use a desktop Codex session with authorized local execution and plugin access. The account publication is private; a private link or downloaded ZIP alone does not install it for someone else. See the [installation and first-session guide](references/installation.md) for the local marketplace route, goal-specific prerequisites, updates and current testing limits. No public download location is established yet.
 
+**In Claude (early support):** use Claude Code on the computer that holds your records, with access to this repository: `/plugin install academic-records --marketplace VagishHemmige/cv-and-website-maintainer`. Claude in a browser cannot reach local records or tools. Scheduled reviews and handing an update to another chat are not yet set up for Claude. So far Claude has been checked to load the plugin and its references, not to run full workflows.
+
 ## Start here
 
 Say “Add this teaching session and these slides,” “Check for possible updates,” or “Help me start from my CV.” The assistant checks access, reuses saved answers, asks one question at a time, and shows each exact record change for approval. You do not need to edit YAML or run helper commands yourself.
