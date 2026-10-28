@@ -1,0 +1,10 @@
+{
+  "name": "academic-records",
+  "version": "0.2.0",
+  "description": "Maintain academic YAML, discover updates, and add user-approved references to Zotero.",
+  "author": {
+    "name": "Academic Records"
+  },
+  "keywords": [],
+  "displayName": "CV and Website Maintainer"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "cv-and-website-maintainer",
+  "description": "CV and Website Maintainer: maintain academic records, a CV and an academic website with an assistant.",
+  "owner": {
+    "name": "Vagish Hemmige"
+  },
+  "plugins": [
+    {
+      "name": "academic-records",
+      "source": ".",
+      "description": "Maintain academic YAML, discover updates, and add user-approved references to Zotero."
+    }
+  ]
+}
