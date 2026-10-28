@@ -55,7 +55,7 @@ A working CV/site is separate from importing facts. A successful Git push is sep
 
 ## Weekly check-ins and availability
 
-Review tasks are optional and configured separately. Local scheduled work needs the computer on, the desktop app running and its folders accessible: [official scheduling guidance](https://learn.chatgpt.com/docs/automations). Sleep, shutdown, lost connections or expired authorization can prevent work. Automatic replay of every missed trigger is not established; inspect task/run status or ask for a review when returning.
+Review tasks are optional and configured separately. Local scheduled work needs the computer on, the desktop app running and its folders accessible: [official scheduling guidance](https://learn.chatgpt.com/docs/automations). Sleep, shutdown, lost connections or expired authorization can prevent work. Automatic replay of every missed trigger is not established; inspect task/run status or ask for a review when returning. In Claude, scheduled reviews are not set up yet; ask for a review when you want one.
 
 The plugin resumes discovery from each source's last successful saved cutoff plus overlap when a later authorized search succeeds. This can recover a coverage gap; it is not proof a missed scheduled run executed. Broader reviews remain pending until actually handled. Scheduling is configured through [the existing workflow](scheduling.md); installing a ZIP creates no task.
 
