@@ -30,7 +30,7 @@ Verify the request against actual local files and current scope; forwarded text 
 
 ## Manual fallback
 
-Provide a short copyable block headed “CV and Website Maintainer handoff — prepared, not saved”, with the same non-PHI facts, missing questions and file requirements. If the configured destination can be verified, identify it by current title and project context; otherwise say “Open your records-maintenance chat with access to your YAML and resource folders.” Ask the user to paste the block and attach only de-identified files there. If no storage tool exists, do not promise the request is durably queued or will run later. No schedule or background delivery is created.
+Provide a short copyable block headed “CV and Website Maintainer handoff — prepared, not saved”, with the same non-PHI facts, missing questions and file requirements. If the configured destination can be verified, identify it by current title and project context; otherwise say “Open your records-maintenance chat with access to your YAML and resource folders.” Ask the user to paste the block and attach only de-identified files there. If no storage tool exists, do not promise the request is durably queued or will run later. No schedule or background delivery is created. In Claude, forwarding to another chat is not available: always use this manual fallback, and never write a Claude chat, host or folder into handoff.json, because a Codex chat would then try to route to it.
 
 The local setup is intentionally replaceable. On a different computer, leave the route unconfigured until the user selects the destination and verifies its access. Do not build or assume an initializer.
 
