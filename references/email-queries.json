@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "provider": "gmail",
+  "version": "1",
+  "categories": {
+    "abstracts": {
+      "query": "{abstract poster \"oral presentation\"} {accepted acceptance decision submission notification program presentation}"
+    },
+    "talks": {
+      "query": "{\"invited speaker\" \"speaker invitation\" \"grand rounds\" \"invited lecture\" \"invitation to speak\" \"conference presentation\"}"
+    },
+    "teaching": {
+      "query": "{teaching lecture workshop curriculum course} {invitation invited scheduled faculty instructor teach}"
+    },
+    "honors": {
+      "query": "{award honor honour prize fellowship} {recipient awarded selected congratulations nomination nominated}"
+    },
+    "grants": {
+      "query": "{grant funding \"research support\"} {awarded decision notice submitted application renewal}"
+    },
+    "appointments": {
+      "query": "{appointment promotion faculty employment} {offer appointed promoted renewal reappointment termination ended}"
+    },
+    "service": {
+      "query": "{reviewer reviewing \"editorial board\" committee chair service} {invitation invited appointment thank completed renewal}"
+    },
+    "memberships_certifications": {
+      "query": "{membership certification credential board society} {renewal renew expired expiration lapse lapsed dues recertification}"
+    },
+    "mentoring_projects": {
+      "query": "{mentee mentoring mentor supervise supervision \"research project\" collaboration} {student trainee fellow resident project meeting}"
+    },
+    "publications": {
+      "query": "{manuscript article paper publication chapter} {accepted acceptance decision proofs published revision}"
+    },
+    "media": {
+      "query": "{interview podcast journalist reporter \"media request\" \"press release\"}"
+    }
+  }
+}

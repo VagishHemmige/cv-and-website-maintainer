@@ -1,0 +1,25 @@
+# Question interaction
+
+Use the host's structured question capability when available and permitted for the current question. Tool names vary by host; do not assume a particular Codex tool exists in Claude or another host. In Codex, prefer request_user_input_async when available; request_user_input may be restricted to Plan mode. If no suitable question capability is available, ask a single clear question in chat.
+
+Ask exactly one question or decision at a time, with only one unanswered question active. Wait for the user's response before asking the next. Do not bundle unrelated facts into one prompt, a numbered questionnaire, or multiple questions in one tool call. If an earlier batch is pending, supersede it with one selected question; preserve unanswered items privately. Continue independent work while awaiting an asynchronous response.
+
+Make each question self-contained with brief relevant context. Use concise suggested choices when they help; allow free text and uncertainty. Do not force an unsupported factual answer. Reuse dated confirmations and saved dispositions; ask again only when new evidence, changed circumstances or an agreed review date justifies it. An issue list or report may contain multiple findings without demanding answers to all at once.
+
+## Fewer turns within one question at a time
+
+For a category review, show the actual current list and ask what changed, inviting the person/item and change in the same answer. Offer No changes and explicit deferral choices plus free text where the host supports them. Do not require a Changes needed selection before accepting details already supplied. If the user chooses only Changes needed, a focused follow-up is still necessary; do not invent the missing details. Supported free-text facts go straight to proposal preparation, not live records, once remaining required facts are established.
+
+A deferral option must name its revisit condition: for example, Only when I ask, or the next broader review with its actual verified date/time or exact agreed trigger. Do not turn a generic Defer into a guessed date, cadence or trigger. Resolve genuinely missing revisit information in one focused follow-up and follow deferrals.md. Existing deferred categories stay deferred; shorter questions never override their conditions.
+
+Reuse explicit values just supplied without asking them again. When a correction arrives while an older question is pending, supersede the obsolete question, preserve the correction as the latest factual answer and ask only what remains missing. Relative wording such as beginning of the year may still require date/year/precision clarification; never silently turn approximate wording into January 1. A confirmed date still needs exact record-proposal approval before saving.
+
+Combine a preference choice and approval only if the exact validated proposal has already been shown: before/after, provenance, proposal ID and relevant validation/limits. The choice must explicitly approve that named proposal (for example, Approve proposal ID: set initial_window_days to 365). A bare Past 12 months response or a label saying saves 365 does not approve unseen config bytes. Keep source permissions, host access and task changes separate. Unknown answers still follow pending-answer staging and combined profile proposals; do not pre-authorize unspecified future edits or introduce per-answer applications throughout setup.
+
+After a disposition or verified save, continue the next eligible item in the already authorized review without making the user ask Anything else. Honor pauses, one pending question, deferrals and required per-finding/per-proposal approvals; continuation does not authorize a new kind of work. Do not jump from a fact answer to applying a record, from a declined candidate to closing all submissions, or from Nothing to add for one category to completing the whole review.
+
+For exact-proposal approval, show the concrete change and validation first, then ask one approval question using the host capability if it supports approval. Do not treat silence, elapsed time, preselected choices, a fact clarification or approval of an earlier different proposal as approval. A change to the proposed bytes or scope requires renewed approval under the workflow's existing rules. Multiple records in a requested batch may be reviewed together as one named proposal, but the approval prompt must remain one decision.
+
+Use the host's required permission/escalation flow for tool or filesystem access; a questionnaire answer cannot replace it. For attachments, the now/later/none preference may use structured choices, while the actual upload must use a surface that accepts files. Do not repeat an active structured question in the final response or append further questions there.
+
+If the user reports that a structured prompt disappeared or is unusable, ask that same single question in chat and preserve the pending item. After an approved save, continue the next question in an ongoing review unless the user deferred it; do not treat each save as the end of the review.

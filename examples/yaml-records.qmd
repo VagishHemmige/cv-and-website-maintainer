@@ -1,0 +1,52 @@
+---
+title: "Grants"
+format: html
+execute:
+  echo: false
+  warning: false
+---
+
+```{r}
+#| results: asis
+# Adapt these choices after reviewing the actual record schema/public fields.
+record_file <- "data/grants.yml"
+visible_fields <- c(title = "Title", sponsor = "Sponsor", role = "Role")
+records <- yaml::read_yaml(record_file, eval.expr = FALSE)
+if (is.null(records)) records <- list()
+if (!is.list(records) || !is.null(names(records))) {
+  stop("Expected a YAML sequence of records")
+}
+escape_html <- function(value) {
+  value <- gsub("&", "&amp;", value, fixed = TRUE)
+  value <- gsub("<", "&lt;", value, fixed = TRUE)
+  value <- gsub(">", "&gt;", value, fixed = TRUE)
+  value <- gsub('"', "&quot;", value, fixed = TRUE)
+  value
+}
+display_value <- function(value) {
+  if (is.null(value)) return("")
+  if (!is.atomic(value) || length(value) != 1L) {
+    stop("Visible fields must be scalar; adapt list/date fields explicitly")
+  }
+  if (is.na(value)) return("")
+  escape_html(as.character(value))
+}
+if (length(records) == 0L) {
+  cat("<p>No records to display.</p>\n")
+} else {
+  for (record in records) {
+    if (!is.list(record) || is.null(names(record))) {
+      stop("Each record must be a YAML mapping")
+    }
+    cat("<dl>\n")
+    for (field in names(visible_fields)) {
+      value <- display_value(record[[field]])
+      if (nzchar(value)) {
+        cat("<dt>", escape_html(visible_fields[[field]]), "</dt><dd>",
+            value, "</dd>\n", sep = "")
+      }
+    }
+    cat("</dl>\n")
+  }
+}
+```

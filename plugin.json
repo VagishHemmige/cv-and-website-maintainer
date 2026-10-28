@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "Maintain academic YAML, discover updates, and add user-approved references to Zotero.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [],
+        "category": "Productivity",
+        "defaultPrompt": [
+          "I have a new award or abstract to add to my website records.",
+          "Check for possible updates to my academic records and report candidates for review."
+        ],
+        "displayName": "CV and Website Maintainer",
+        "longDescription": "Update approved local YAML through reviewed proposals, discover possible academic activities, and add approved publication records through an available Zotero companion integration. Every record write needs approval. Scheduling and source access are configured separately.",
+        "shortDescription": "Maintain your CV and academic website",
+        "developerName": "Academic Records"
+      }
+    }
+  },
+  "name": "academic-records",
+  "version": "0.2.0",
+  "author": {
+    "name": "Academic Records"
+  }
+}

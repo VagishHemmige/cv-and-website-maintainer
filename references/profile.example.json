@@ -1,0 +1,201 @@
+{
+  "schema_version": 3,
+  "adapter": "academic-yaml-13",
+  "identity": {
+    "full_name": null,
+    "search_names": null,
+    "identifiers": null,
+    "affiliations": null,
+    "topics": null
+  },
+  "project_root": null,
+  "data_root": null,
+  "state_root": null,
+  "instructions_path": null,
+  "approved_files": [],
+  "approval_policy": null,
+  "bibliography_file": null,
+  "publication_store": null,
+  "destinations": {},
+  "consumer_map": {},
+  "runtime": {
+    "rscript": null,
+    "r_library": null,
+    "python": null,
+    "powershell": null
+  },
+  "discovery": {
+    "exclusions": null,
+    "sender_exclusions": null,
+    "sources": null,
+    "frequency": null,
+    "day": null,
+    "time": null,
+    "timezone": null,
+    "notification_rule": null,
+    "initial_window_days": null,
+    "overlap_days": null,
+    "automation_id": null,
+    "chat_scope": null,
+    "checkpoint_path": null,
+    "window_policy": "per_source_last_successful_cutoff_minus_overlap",
+    "initial_window_policy": "ask_at_first_discovery_then_save_answer"
+  },
+  "decisions": [],
+  "pending_setup_questions": [],
+  "zotero": {
+    "enabled": null,
+    "destination_mode": null,
+    "default_library": null,
+    "default_collection": null,
+    "helper_path": null,
+    "capabilities": {
+      "read": null,
+      "import": null,
+      "edit_existing": null
+    },
+    "auto_export": {
+      "status": "unknown",
+      "targets": null,
+      "side_effect_policy": "review_before_write"
+    }
+  },
+  "rendering_preference": null,
+  "output_commands": {},
+  "attachments": {
+    "approved_pdf_dirs": [],
+    "routes": {
+      "teaching": null,
+      "abstracts": null,
+      "talks": {
+        "invited": null,
+        "conference": null,
+        "grand_rounds": null,
+        "teaching": null
+      }
+    },
+    "soffice": null
+  },
+  "setup": {
+    "status": "incomplete",
+    "updated_at": null
+  },
+  "review": {
+    "routine_frequency": null,
+    "broader_every_n_cycles": null,
+    "anchor_date": null,
+    "day": null,
+    "time": null,
+    "timezone": null,
+    "notification_rule": null,
+    "source_selection_status": "pending",
+    "approved_sources": [],
+    "discover_integrations_each_run": true,
+    "automation_id": null,
+    "automation_status": "not_configured",
+    "categories": null,
+    "scheduler_configuration": {
+      "status": "not_configured",
+      "host": null,
+      "execution_destination": null,
+      "timezone_verified": null,
+      "approved_specification": null,
+      "last_verified_at": null,
+      "last_observed_next_run": null
+    },
+    "check_in": {
+      "reminder_mode": null,
+      "cv_link": null,
+      "website_url": null,
+      "category_sources": {},
+      "repeat_nudge_within_cycle": false
+    }
+  },
+  "preference_authority": {
+    "schedule": "review",
+    "sources_and_windows": "discovery",
+    "legacy_schedule_fields": "synchronized compatibility mirrors only"
+  },
+  "profile_status": "active",
+  "canonical_profile_path": null,
+  "development_plan_path": null,
+  "design_records": [],
+  "legacy_state_roots": [],
+  "initialization": {
+    "route": null,
+    "baseline_sources": [],
+    "status": "pending"
+  },
+  "outputs": {
+    "requested": null,
+    "visibility_rules": null
+  },
+  "assistance": {
+    "records": null,
+    "code": null,
+    "rendering": null,
+    "git": null,
+    "publishing": null
+  },
+  "persistence": {
+    "backup_preference": null,
+    "transfer_policy": null,
+    "retention_preference": null
+  },
+  "readiness": {
+    "local_maintenance": {
+      "status": "pending",
+      "blockers": []
+    },
+    "discovery": {
+      "status": "pending",
+      "blockers": []
+    },
+    "publication": {
+      "status": "pending",
+      "blockers": []
+    },
+    "attachments": {
+      "status": "pending",
+      "blockers": []
+    },
+    "scheduling": {
+      "status": "pending",
+      "blockers": []
+    }
+  },
+  "plugin_binding": {
+    "plugin_id": null,
+    "resolution": "current_installed",
+    "minimum_compatible_version": null,
+    "last_verified_version": null,
+    "last_verified_release_id": null,
+    "latest_available_verified_at": null
+  },
+  "output_execution": {
+    "website": {
+      "mode": null,
+      "authorization": null
+    },
+    "private_cv": {
+      "mode": null,
+      "authorization": null
+    },
+    "verification": {
+      "mode": null,
+      "authorization": null
+    },
+    "commit": {
+      "mode": null,
+      "authorization": null
+    },
+    "push": {
+      "mode": null,
+      "authorization": null
+    },
+    "public_cv": {
+      "status": null,
+      "authorization": null
+    }
+  }
+}
