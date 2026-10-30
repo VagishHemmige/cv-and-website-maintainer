@@ -6,9 +6,9 @@ Maintain academic records with an assistant: add activities, review possible upd
 
 ## Before you start
 
-Use a desktop Codex session with authorized local execution and plugin access. The account publication is private; a private link or downloaded ZIP alone does not install it for someone else. See the [installation and first-session guide](references/installation.md) for the local marketplace route, goal-specific prerequisites, updates and current testing limits. No public download location is established yet.
+Use a desktop Codex session with authorized local execution and plugin access. The source is public on [GitHub](https://github.com/VagishHemmige/cv-and-website-maintainer). See the [installation and first-session guide](references/installation.md) for the local marketplace route, goal-specific prerequisites, updates and current testing limits.
 
-**In Claude (early support):** use Claude Code on the computer that holds your records, with access to this repository: `/plugin install academic-records --marketplace VagishHemmige/cv-and-website-maintainer`. Claude in a browser cannot reach local records or tools. Scheduled reviews and handing an update to another chat are not yet set up for Claude. So far Claude has been checked to load the plugin and its references, not to run full workflows.
+**In Claude (early support):** use Claude Code on the computer that holds your records. In Claude Code, run `/plugin marketplace add VagishHemmige/cv-and-website-maintainer`, then `/plugin install academic-records@cv-and-website-maintainer`. Claude in a browser cannot reach local records or tools. In Claude, reviews run when you ask rather than on a schedule, and a handoff to another chat is a block you paste yourself. Installing and loading all six skills has been checked; full workflows in Claude have not. See [Install in Claude Code](references/installation.md#install-in-claude-code).
 
 ## Start here
 

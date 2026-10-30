@@ -22,7 +22,7 @@ Start with [readiness](readiness.md); it reports actual selected versions, libra
 
 ## Obtain and install a copy
 
-The owner's account publication is private. Its link does not grant other people installation access. No public repository/download address is promised here. Obtain a complete release ZIP from the maintainer through a distribution route you can access; an update-only ZIP is insufficient.
+The source is public on [GitHub](https://github.com/VagishHemmige/cv-and-website-maintainer). For Codex, obtain a complete release ZIP from the maintainer or build one from that source; an update-only ZIP is insufficient. For Claude Code, see Install in Claude Code below.
 
 For a local copy, the maintainer's local-marketplace ZIP contains this layout:
 
@@ -44,6 +44,17 @@ distribution-root/
 5. Ask for a read-only readiness report before creating a project.
 
 These steps follow [OpenAI's local-marketplace documentation](https://developers.openai.com/plugins/build/plugins). Registration does not itself install the plugin. No account credentials are packaged. If starting from a plain complete plugin ZIP, ask an assistant to construct the illustrated wrapper using [the catalog example](../examples/local-marketplace.json). The catalog path is relative to distribution-root, not the nested .agents/plugins folder. Preserve existing catalogs and installations; do not edit plugin caches.
+
+## Install in Claude Code
+
+Early support. Use Claude Code on the computer that holds your records, so it can run R, Quarto, Git and Python there. Claude in a browser cannot reach local records or tools.
+
+1. In Claude Code, run `/plugin marketplace add VagishHemmige/cv-and-website-maintainer`.
+2. Run `/plugin install academic-records@cv-and-website-maintainer` and confirm the install.
+3. Start a new session and check that the plugin's six skills are listed.
+4. Ask for a read-only readiness report before creating a project.
+
+Your private profile lives in the same documented location as in Codex (see [private preferences](preferences.md)), so switching between the two keeps one profile. In Claude, scheduled reviews are not set up yet ([scheduling](scheduling.md)), and a handoff to another chat is a copyable block you paste yourself ([handoff](handoff.md)). Checked on 2026-10-30 with Claude Code 2.1.312: these two commands install the plugin with all six skills and its scripts. Full workflows in Claude have not yet been demonstrated.
 
 ## Your first session
 

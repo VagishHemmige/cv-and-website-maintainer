@@ -1,5 +1,12 @@
 # CV and Website Maintainer change history
 
+## Unreleased: early Claude support
+
+- Add Claude Code manifests (.claude-plugin/plugin.json and marketplace.json). Install with `/plugin marketplace add VagishHemmige/cv-and-website-maintainer`, then `/plugin install academic-records@cv-and-website-maintainer`. Checked to install all six skills and the scripts; full workflows in Claude not yet demonstrated.
+- Use the display name CV and Website Maintainer where people read it. The identifier academic-records, skill folders, profile fields, handoff.json layout and ~/.codex/academic-records/ paths are unchanged.
+- In Claude: AskUserQuestion for questions; the same private-state files as Codex; no scheduled reviews yet (automation_id never holds a Claude task ID); handoff by copyable block only. .claude folders are protected from publication like .codex.
+- README and installation guide give the public GitHub source and a Claude Code install section. Codex manifests, the local marketplace example and the starter ZIP are unchanged.
+
 ## 0.2.0
 
 - Mark the expanded initialization workflow with a minor-version release, including the optional private PDF and public website CV choices introduced in 0.1.81.
