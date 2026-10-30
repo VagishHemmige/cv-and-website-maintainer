@@ -1,0 +1,92 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CV and Website Maintainer",
+    "section": "",
+    "text": "Written for version 0.2.0.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#what-it-is",
+    "href": "index.html#what-it-is",
+    "title": "CV and Website Maintainer",
+    "section": "What it is",
+    "text": "What it is\nCV and Website Maintainer is a plugin for Codex, with Claude Code support in progress. A plugin is a set of instructions the assistant reads when a task calls for them, so it works the same way every time. This one keeps an academic’s records (appointments, grants, talks, abstracts, teaching, mentoring, media and more) in structured files, and builds a Word CV and a Quarto website from them. Publications come from Zotero.\nYou ask in plain words (“Add this teaching session and these slides”, “Check for possible updates”, “Help me start from my CV”) and the assistant follows the plugin’s steps. You don’t need to edit YAML or run commands yourself.\nIt was previously called Academic Records. Its internal name is still academic-records, so existing setups keep working.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#what-it-does",
+    "href": "index.html#what-it-does",
+    "title": "CV and Website Maintainer",
+    "section": "What it does",
+    "text": "What it does\n\n\n\n\n\n\n\nYou want to\nThe plugin\n\n\n\n\nStart from a CV, an existing website or nothing\nStages candidate records privately for your review, and can set up a starter website and Word CV\n\n\nSet preferences or resume setup\nAsks one question at a time and saves answers in private storage outside your website\n\n\nAdd or correct an activity\nShows the exact change to your records and saves it only after you approve\n\n\nFind possible new activities\nSearches only the sources you approved (such as PubMed or your email) and lists candidates for review\n\n\nAdd publications\nAdds approved references to Zotero through a separate Zotero integration\n\n\nHand an update to another chat\nPrepares the request without claiming it was saved",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#what-it-wont-do-without-you",
+    "href": "index.html#what-it-wont-do-without-you",
+    "title": "CV and Website Maintainer",
+    "section": "What it won’t do without you",
+    "text": "What it won’t do without you\n\nSave without approval. Every change to your records is shown exactly, and saved only once you approve it.\nPublish on its own. Saving a record doesn’t rebuild your CV or publish your website; those steps follow the permissions you set.\nHandle patient information. If slides or files may contain patient identifiers, it warns you and stops before copying or linking them.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#status",
+    "href": "index.html#status",
+    "title": "CV and Website Maintainer",
+    "section": "Status",
+    "text": "Status\n\nCodex: the supported host. To install, follow the installation guide.\nClaude Code: support is in progress and not yet released.\nTesting: an automated test suite runs on every change; blind testing with simulated users is planned. See How it’s tested.\n\nSource, history and issues are on GitHub.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "sites.html",
+    "href": "sites.html",
+    "title": "Sites built with it",
+    "section": "",
+    "text": "Written for version 0.2.0.\n\nVagish Hemmige: academic website and CV. Its records are kept in YAML with this plugin; the website and the CV PDF are built from them. Source on GitHub.\n\nIf you have built a site with the plugin, open an issue on the plugin’s repository with its address.",
+    "crumbs": [
+      "Sites built with it"
+    ]
+  },
+  {
+    "objectID": "testing.html",
+    "href": "testing.html",
+    "title": "How it’s tested",
+    "section": "",
+    "text": "Written for version 0.2.0.",
+    "crumbs": [
+      "How it's tested"
+    ]
+  },
+  {
+    "objectID": "testing.html#automated-tests",
+    "href": "testing.html#automated-tests",
+    "title": "How it’s tested",
+    "section": "Automated tests",
+    "text": "Automated tests\nThe repository has 626 automated tests in its tests folder. They run on made-up records and check the plugin’s helpers: approvals before saving, backups and receipts, detecting a file changed since it was proposed, privacy checks before publishing, and the CV and website outputs. 61 of them are skipped unless the tools they need, such as R, Quarto or Git, are available. Pushing to GitHub and Office file conversion are mocked, not run for real.\nThese tests check the helpers, not how the assistant behaves with a real person.",
+    "crumbs": [
+      "How it's tested"
+    ]
+  },
+  {
+    "objectID": "testing.html#blind-testing-planned",
+    "href": "testing.html#blind-testing-planned",
+    "title": "How it’s tested",
+    "section": "Blind testing (planned)",
+    "text": "Blind testing (planned)\nThe next step is testing with simulated users who don’t see the plugin’s instructions or the answers. Six made-up academics, from a senior physician who has never used R to an experienced website owner, each ask for help in their own words, and a separate evaluator checks the actual files, not the conversation. One of them starts with no website at all.\nThe plan is in issues #1 and #2 and draft pull request #3. No runs have been done yet. Results will be posted here.",
+    "crumbs": [
+      "How it's tested"
+    ]
+  }
+]
