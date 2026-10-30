@@ -1,0 +1,9 @@
+---
+title: "Sites built with it"
+---
+
+*Written for version 0.2.0.*
+
+- [Vagish Hemmige](https://vagishhemmige.github.io/): academic website and CV. Its records are kept in YAML with this plugin; the website and the CV PDF are built from them. Source on [GitHub](https://github.com/VagishHemmige/VagishHemmige.github.io).
+
+If you have built a site with the plugin, open an [issue on the plugin's repository](https://github.com/VagishHemmige/cv-and-website-maintainer/issues) with its address.

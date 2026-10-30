@@ -1,0 +1,17 @@
+---
+title: "How it's tested"
+---
+
+*Written for version 0.2.0.*
+
+## Automated tests
+
+The repository has 626 automated tests in its [tests folder](https://github.com/VagishHemmige/cv-and-website-maintainer/tree/main/tests). They run on made-up records and check the plugin's helpers: approvals before saving, backups and receipts, detecting a file changed since it was proposed, privacy checks before publishing, and the CV and website outputs. 61 of them are skipped unless the tools they need, such as R, Quarto or Git, are available. Pushing to GitHub and Office file conversion are mocked, not run for real.
+
+These tests check the helpers, not how the assistant behaves with a real person.
+
+## Blind testing (planned)
+
+The next step is testing with simulated users who don't see the plugin's instructions or the answers. Six made-up academics, from a senior physician who has never used R to an experienced website owner, each ask for help in their own words, and a separate evaluator checks the actual files, not the conversation. One of them starts with no website at all.
+
+The plan is in issues [#1](https://github.com/VagishHemmige/cv-and-website-maintainer/issues/1) and [#2](https://github.com/VagishHemmige/cv-and-website-maintainer/issues/2) and draft [pull request #3](https://github.com/VagishHemmige/cv-and-website-maintainer/pull/3). No runs have been done yet. Results will be posted here.
