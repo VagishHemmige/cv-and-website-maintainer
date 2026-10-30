@@ -1,0 +1,39 @@
+---
+title: "CV and Website Maintainer"
+subtitle: "A plugin that helps an AI assistant keep an academic CV and website up to date"
+---
+
+*Written for version 0.2.0.*
+
+## What it is
+
+CV and Website Maintainer is a plugin for Codex, with Claude Code support in progress. A plugin is a set of instructions the assistant reads when a task calls for them, so it works the same way every time. This one keeps an academic's records (appointments, grants, talks, abstracts, teaching, mentoring, media and more) in structured files, and builds a Word CV and a Quarto website from them. Publications come from Zotero.
+
+You ask in plain words ("Add this teaching session and these slides", "Check for possible updates", "Help me start from my CV") and the assistant follows the plugin's steps. You don't need to edit YAML or run commands yourself.
+
+It was previously called Academic Records. Its internal name is still `academic-records`, so existing setups keep working.
+
+## What it does
+
+| You want to | The plugin |
+| --- | --- |
+| Start from a CV, an existing website or nothing | Stages candidate records privately for your review, and can set up a starter website and Word CV |
+| Set preferences or resume setup | Asks one question at a time and saves answers in private storage outside your website |
+| Add or correct an activity | Shows the exact change to your records and saves it only after you approve |
+| Find possible new activities | Searches only the sources you approved (such as PubMed or your email) and lists candidates for review |
+| Add publications | Adds approved references to Zotero through a separate Zotero integration |
+| Hand an update to another chat | Prepares the request without claiming it was saved |
+
+## What it won't do without you
+
+- **Save without approval.** Every change to your records is shown exactly, and saved only once you approve it.
+- **Publish on its own.** Saving a record doesn't rebuild your CV or publish your website; those steps follow the permissions you set.
+- **Handle patient information.** If slides or files may contain patient identifiers, it warns you and stops before copying or linking them.
+
+## Status
+
+- **Codex:** the supported host. To install, follow the [installation guide](https://github.com/VagishHemmige/cv-and-website-maintainer/blob/main/references/installation.md).
+- **Claude Code:** support is in progress and not yet released.
+- **Testing:** an automated test suite runs on every change; blind testing with simulated users is planned. See [How it's tested](testing.qmd).
+
+Source, history and issues are on [GitHub](https://github.com/VagishHemmige/cv-and-website-maintainer).

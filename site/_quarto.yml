@@ -1,0 +1,35 @@
+# Site about the plugin. The source is this folder. A GitHub Action
+# (.github/workflows/publish.yml) renders it and publishes it to the gh-pages
+# branch, which GitHub Pages serves. Until the plugin moves into plugin/, this
+# folder is also installed with the plugin; it holds only public pages.
+# Each page says which version it was written for.
+project:
+  type: website
+  output-dir: _site
+
+author:
+  - name: "Vagish Hemmige"
+
+website:
+  title: "CV and Website Maintainer"
+  site-url: https://vagishhemmige.github.io/cv-and-website-maintainer
+  repo-url: https://github.com/VagishHemmige/cv-and-website-maintainer
+  repo-branch: main
+  page-navigation: true
+
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: testing.qmd
+        text: How it's tested
+      - href: sites.qmd
+        text: Sites built with it
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    page-layout: full
